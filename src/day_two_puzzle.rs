@@ -24,18 +24,6 @@ fn decrpyt(action: &str) -> String {
     }
 }
 
-fn encrypt_my_action(action: &str) -> String {
-    if action == "Scissors" {
-        return "Z".to_string();
-    } else if action == "Paper" {
-        return "Y".to_string();
-    } else if action == "Rock" {
-        return "X".to_string();
-    } else {
-        return "unknown".to_string();
-    }
-}
-
 fn get_my_action(my_goal: &str, opponent_action: &str) -> String {
     let decrypt_oppoinent_action = decrpyt(opponent_action);
     if my_goal == "X" { // loose 
